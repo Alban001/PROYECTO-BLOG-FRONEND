@@ -1,0 +1,353 @@
+body {
+  font-family: "Alegreya", serif;
+}
+
+.app {
+  background-color: #feeee4;
+  display: flex;
+  justify-content: center;
+}
+.app .container {
+  width: 1040px;
+}
+.app .container .link {
+  text-decoration: none;
+  color: inherit;
+}
+.app .container .link img {
+  width: 1.8rem;
+}
+.app .container .auth {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #1a2639;
+}
+.app .container .auth h1 {
+  font-size: 20px;
+  color: #c24d2c;
+  margin-bottom: 20px;
+}
+.app .container .auth form {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  background-color: white;
+  width: 200px;
+  gap: 20px;
+}
+.app .container .auth form input {
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid gray;
+}
+.app .container .auth form button {
+  padding: 10px;
+  border: none;
+  background-color: #c24d2c;
+  cursor: pointer;
+  color: white;
+}
+.app .container .auth form p {
+  font-size: 12px;
+  color: red;
+  text-align: center;
+}
+.app .container .auth form span {
+  font-size: 12px;
+  text-align: center;
+}
+.app .container .navbar .container {
+  padding: 10px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1a2639;
+  color: white;
+}
+.app .container .navbar .container .logo {
+  padding-left: 2rem;
+}
+.app .container .navbar .container .logo img {
+  width: 120px;
+}
+.app .container .navbar .container .links {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-right: 2rem;
+  height: auto;
+}
+.app .container .navbar .container .links .link {
+  height: auto;
+}
+.app .container .navbar .container .links .link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0.3px;
+  transition: width 0.3s;
+  background-color: #fff;
+}
+.app .container .navbar .container .links .link:hover::after {
+  width: 100%;
+  transition: width 0.3s;
+}
+.app .container .navbar .container .links h6 {
+  font-size: 16px;
+  font-weight: 300;
+}
+.app .container .navbar .container .links span {
+  cursor: pointer;
+}
+.app .container .navbar .container .links .write {
+  background-color: #1a2639;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 300;
+}
+.app .container .navbar .container .links .write:hover {
+  color: #c24d2c;
+  background-color: white;
+  border: 1px solid #c24d2c;
+}
+.app .container footer {
+  margin-top: 100px;
+  height: 11rem;
+  padding: 2rem;
+  background-color: #1a2639;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+  color: white;
+}
+.app .container footer img {
+  height: 80px;
+}
+.app .container .home {
+  padding: 3rem;
+}
+.app .container .home .posts {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 150px;
+}
+.app .container .home .posts .post {
+  display: flex;
+  gap: 100px;
+}
+.app .container .home .posts .post:nth-child(2n+1) {
+  flex-direction: row-reverse;
+}
+.app .container .home .posts .post .img {
+  flex: 2;
+  position: relative;
+}
+.app .container .home .posts .post .img img {
+  width: 100%;
+  max-height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.app .container .home .posts .post .content {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.app .container .home .posts .post .content h1 {
+  font-size: 48px;
+}
+.app .container .home .posts .post .content p {
+  font-size: 18px;
+}
+.app .container .home .posts .post .content button {
+  width: -moz-max-content;
+  width: max-content;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  background-color: white;
+  border: 1px solid #c24d2c;
+  color: #c24d2c;
+}
+.app .container .home .posts .post .content button:hover {
+  border: 1px solid white;
+  background-color: #1a2639;
+  color: white;
+}
+.app .container .single {
+  display: flex;
+  gap: 50px;
+}
+.app .container .single .content {
+  flex: 5;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.app .container .single .content img {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.app .container .single .content .user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+}
+.app .container .single .content .user img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.app .container .single .content .user span {
+  font-weight: bold;
+}
+.app .container .single .content .edit {
+  display: flex;
+  gap: 5px;
+}
+.app .container .single .content .edit img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.app .container .single .content h1 {
+  font-size: 42px;
+  color: #333;
+}
+.app .container .single .content p {
+  text-align: justify;
+  line-height: 30px;
+}
+.app .container .single .text-content {
+  width: 70%;
+  margin-left: 7rem;
+  text-align: justify;
+}
+.app .container .single .text-content h1 {
+  color: #615d5d;
+}
+.app .container .single .menu {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.app .container .single .menu h1 {
+  font-size: 20px;
+  color: #555;
+}
+.app .container .single .menu .post {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.app .container .single .menu .post img {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.app .container .single .menu .post h2 {
+  color: #555;
+}
+.app .container .single .menu .post button {
+  width: -moz-max-content;
+  width: max-content;
+  padding: 7.5px 15px;
+  border: none;
+  cursor: pointer;
+  color: #c24d2c;
+  background-color: white;
+  border: 1px solid #c24d2c;
+}
+.app .container .single .menu .post button:hover {
+  border: 1px solid white;
+  background-color: #1a2639;
+  color: white;
+}
+.app .container .add {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+}
+.app .container .add .content {
+  flex: 5;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.app .container .add .content input {
+  padding: 10px;
+  border: 1px solid lightgray;
+}
+.app .container .add .content .editorContainer {
+  height: 300px;
+  overflow: scroll;
+  border: 1px solid lightgray;
+}
+.app .container .add .content .editorContainer .editor {
+  height: 100%;
+  border: none;
+}
+.app .container .add .menu {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.app .container .add .menu .item {
+  border: 1px solid lightgray;
+  padding: 10px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #555;
+}
+.app .container .add .menu .item h1 {
+  font-size: 20px;
+}
+.app .container .add .menu .item .file {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.app .container .add .menu .item .buttons {
+  display: flex;
+  justify-content: space-between;
+}
+.app .container .add .menu .item .buttons :first-child {
+  cursor: pointer;
+  color: #c24d2c;
+  background-color: white;
+  border: 1px solid #c24d2c;
+  padding: 3px 5px;
+}
+.app .container .add .menu .item .buttons :last-child {
+  cursor: pointer;
+  color: white;
+  background-color: #c24d2c;
+  border: 1px solid #c24d2c;
+  padding: 3px 5px;
+}
+.app .container .add .menu .item .cat {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  color: #c24d2c;
+}/*# sourceMappingURL=style.css.map */
