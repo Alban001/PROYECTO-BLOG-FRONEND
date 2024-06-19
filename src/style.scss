@@ -91,6 +91,7 @@ body{
             width: 80px;
           }
         }
+        
         .links {
           display: flex;
           align-items: center;
@@ -149,7 +150,20 @@ body{
         }
       }
     }
-
+    // USER
+    .user{
+      img{
+        margin-top: 5rem;
+        width:400px;
+        height: auto;
+      }
+      h1{
+        color: red;
+      }
+      P{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      }
+    }
     //FOOTER
 
     footer {

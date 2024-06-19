@@ -11,10 +11,10 @@ import DOMPurify from "dompurify";
 
 const Single = () => {
   const [post, setPost] = useState({});
-
-  const location = useLocation();
+ console.log(post)
+ 
   const navigate = useNavigate();
-
+  const location = useLocation();
   const postId = location.pathname.split("/")[2];
 
   const { currentUser } = useContext(AuthContext);
@@ -40,15 +40,16 @@ const Single = () => {
     }
   }
 
-  const getText = (html) =>{
-    const doc = new DOMParser().parseFromString(html, "text/html")
-    return doc.body.textContent
-  }
+  // const getText = (html) =>{
+  //   const doc = new DOMParser().parseFromString(html, "text/html")
+  //   return doc.body.textContent
+  // }
 
   return (
     <div className="single">
       <div className="content">
         <img src={`../upload/${post?.img}`} alt="" />
+       
         <div className="user">
           {post.userImg && <img
             src={post.userImg}

@@ -6,7 +6,7 @@ import { useLocation, useNavigate } from "react-router-dom";
 import moment from "moment";
 
 const Write = () => {
-  const nodeRef = React.useRef(null)
+
   const state = useLocation().state;
   const [value, setValue] = useState(state?.title || "");
   const [title, setTitle] = useState(state?.desc || "");
@@ -35,14 +35,14 @@ const Write = () => {
         ? await axios.put(`/posts/${state.id}`, {
             title,
             desc: value,
-            cat,
             img: file ? imgUrl : "",
+            cat,
           })
         : await axios.post(`/posts/`, {
             title,
             desc: value,
-            cat,
             img: file ? imgUrl : "",
+            cat,
             date: moment(Date.now()).format("YYYY-MM-DD HH:mm:ss"),
           });
           navigate("/")
@@ -64,7 +64,6 @@ const Write = () => {
             className="editor"
             theme="snow"
             value={value}
-            nodeRef={nodeRef}
             onChange={setValue}
   
           />
