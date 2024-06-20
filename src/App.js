@@ -3,6 +3,7 @@ import {
   RouterProvider,
   Outlet,
 } from "react-router-dom";
+import {React} from 'react'
 import Register from "./pages/Register";
 import Login from "./pages/Login";
 import Write from "./pages/Write";
@@ -12,11 +13,16 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import "./style.scss"
 import User from "./pages/User";
+import { ModalProvider } from "./context/modalContext";
+
 
 const Layout = () => {
+
   return (
     <>
-      <Navbar />
+    <ModalProvider>
+        <Navbar />
+    </ModalProvider>
       <Outlet />
       <Footer />
     </>
@@ -61,8 +67,7 @@ function App() {
   return (
     <div className="app">
       <div className="container">
-        <RouterProvider router={router} />
-        
+        <RouterProvider router={router}/>
       </div>
     </div>
   );

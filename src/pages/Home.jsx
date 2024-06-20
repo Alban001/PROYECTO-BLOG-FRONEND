@@ -8,6 +8,7 @@ const Home = () => {
   const [posts, setPosts] = useState([]);
 
   const cat = useLocation().search
+ 
 
   useEffect(() => {
     const fetchData = async () => {
@@ -54,7 +55,8 @@ const Home = () => {
 
 
   return (
-    <div className="home">
+    <>
+     <div className="home">
       <div className="posts">
         {posts.map((post) => (
           <div className="post" key={post.id}>
@@ -72,6 +74,8 @@ const Home = () => {
         ))}
       </div>
     </div>
+    </>
+   
   );
 };
 

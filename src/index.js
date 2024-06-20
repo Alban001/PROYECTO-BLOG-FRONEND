@@ -5,11 +5,13 @@ import App from "./App";
 import reportWebVitals from './reportWebVitals';
 import { AuthContexProvider } from "./context/authContext";
 
+
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <AuthContexProvider>
     <React.StrictMode>
-      <App />
+            <App />
     </React.StrictMode>
   </AuthContexProvider>
 );
