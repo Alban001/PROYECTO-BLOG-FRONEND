@@ -5,6 +5,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import Menu from "../components/Menu";
 import axios from "axios";
 import moment from "moment";
+import 'moment/locale/es'
 import { useContext } from "react";
 import { AuthContext } from "../context/authContext";
 import DOMPurify from "dompurify";
@@ -40,10 +41,10 @@ const Single = () => {
     }
   }
 
-  // const getText = (html) =>{
-  //   const doc = new DOMParser().parseFromString(html, "text/html")
-  //   return doc.body.textContent
-  // }
+  const getText = (html) =>{
+    const doc = new DOMParser().parseFromString(html, "text/html")
+    return doc.body.textContent
+  }
 
   return (
     <div className="single">
@@ -57,7 +58,7 @@ const Single = () => {
           />}
           <div className="info">
             <span>{post.username}</span>
-            <p>Posted {moment(post.date).fromNow()}</p>
+            <p>Posteado {moment(post.date).locale('es').fromNow()}</p>
           </div>
           {currentUser.username === post.username && (
             <div className="edit">
@@ -69,11 +70,7 @@ const Single = () => {
           )}
         </div>
         <h1>{post.title}</h1>
-        <p
-          dangerouslySetInnerHTML={{
-            __html: DOMPurify.sanitize(post.desc),
-          }}
-        ></p>      </div>
+        <p>{getText(post.historia)}</p>      </div>
       <Menu cat={post.cat}/>
     </div>
   );

@@ -14,7 +14,7 @@ const Modal = ({ isOpen, onClose }) => {
         
           <h2>Aviso</h2>
           <p>Este sitio contiene contenido para adultos, y puede ser inapropiado para algunos espectadores. Se recomienda discreción</p>
-          <div className="button-content">
+          <div className="button-content">  
                   <button onClick={goBack}>Regresar</button><button onClick={onClose}>Si, soy mayor de 18 años o más</button>
           </div>
         </div>
