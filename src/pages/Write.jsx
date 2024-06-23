@@ -155,6 +155,17 @@ const Write = () => {
             />
             <label htmlFor="motivacion">Motivación</label>
           </div>
+          <div className="cat">
+            <input
+              type="radio"
+              checked={cat === "punto"}
+              name="cat"
+              value="punto"
+              id="punto"
+              onChange={(e) => setCat(e.target.value)}
+            />
+            <label htmlFor="punto">Jconpunto</label>
+          </div>
         </div>
       </div>
     </div>
