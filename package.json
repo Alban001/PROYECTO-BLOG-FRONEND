@@ -42,5 +42,5 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "bsfxqrjkxyu3dmhzc81k-mysql.services.clever-cloud.com"
+  "proxy": "https://proyecto-bog-backend.onrender.com/servidor/"
 }
