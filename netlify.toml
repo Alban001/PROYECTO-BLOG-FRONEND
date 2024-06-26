@@ -4,6 +4,6 @@
 
 [[redirects]]
   from = "/servidor/*"
-  to = "https://proyecto-bog-backend.onrender.com/servidor/"
+  to = "https://proyecto-bog-backend.onrender.com/servidor/:splat"
   status = 200
   force = true
