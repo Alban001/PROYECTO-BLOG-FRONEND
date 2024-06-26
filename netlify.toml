@@ -1,9 +1,11 @@
-[build]
-  publish = "build"
-  command = "npm run build"
-
-  [[redirects]]
+[[redirects]]
   from = "/servidor/*"
-  to = "https://proyecto-bog-backend.onrender.com/servidor/posts/:splat"
+  to = "https://proyecto-bog-backend.onrender.com/servidor/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/posts/*"
+  to = "https://proyecto-bog-backend.onrender.com/posts/:splat"
   status = 200
   force = true
