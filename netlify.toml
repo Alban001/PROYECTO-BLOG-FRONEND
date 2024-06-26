@@ -1,3 +1,9 @@
+[build]
+  publish = "build"
+  command = "npm run build"
+  functions = "netlify/functions"
+
+
 [[redirects]]
   from = "/servidor/*"
   to = "https://proyecto-bog-backend.onrender.com/servidor/:splat"
@@ -18,7 +24,7 @@
 
  [[redirects]]
   from = "/auth/*"
-  to = "https://proyecto-bog-backend.onrender.com/servidor/logout/:splat"
+  to = "https://proyecto-bog-backend.onrender.com/servidor/auth/logout/.netlify/functions/:splat"
   status = 200
   force = true
 
