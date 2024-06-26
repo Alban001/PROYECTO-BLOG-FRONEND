@@ -11,19 +11,19 @@
   force = true
 
   [[redirects]]
-  from = "/login/*"
+  from = "/auth/*"
   to = "https://proyecto-bog-backend.onrender.com/servidor/login/:splat"
   status = 200
   force = true
 
    [[redirects]]
-  from = "/register/*"
+  from = "/auth/*"
   to = "https://proyecto-bog-backend.onrender.com/servidor/register/:splat"
   status = 200
   force = true
 
    [[redirects]]
-  from = "/logout/*"
+  from = "/auth/*"
   to = "https://proyecto-bog-backend.onrender.com/servidor/logout/:splat"
   status = 200
   force = true
