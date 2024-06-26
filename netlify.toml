@@ -3,7 +3,7 @@
   command = "npm run build"
 
 [[redirects]]
-  from = "/api/*"
+  from = "/servidor/*"
   to = "https://proyecto-bog-backend.onrender.com/servidor/"
   status = 200
   force = true
