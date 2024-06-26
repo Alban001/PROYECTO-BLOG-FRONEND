@@ -12,9 +12,10 @@
 
   [[redirects]]
   from = "/auth/*"
-  to = "https://proyecto-bog-backend.onrender.com/servidor/login"
+  to = "https://proyecto-bog-backend.onrender.com/servidor/login/:splat"
   status = 200
   force = true
+
 
    [[redirects]]
   from = "/auth/*"
