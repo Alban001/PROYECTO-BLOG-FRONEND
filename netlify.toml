@@ -24,7 +24,7 @@
 
  [[redirects]]
   from = "/servidor/auth/logout"
-  to = "/.netlify/functions/logout"
+  to = "https://proyecto-bog-backend.onrender.com/.netlify/functions/logout"
   status = 200
   force = true
 
