@@ -30,7 +30,7 @@
 
   
 [[redirects]]
-  from = "/servidor/upload"
+  from = "/servidor/"
   to = "/.netlify/functions/servidor/upload"
   status = 200
   force = true
