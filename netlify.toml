@@ -28,6 +28,13 @@
   status = 200
   force = true
 
+  
+ [[redirects]]
+  from = "/post/*"
+  to = "https://proyecto-bog-backend.onrender.com/servidor/upload/:splat"
+  status = 200
+  force = true
+
    [[redirects]]
   from = "/auth/*"
   to = "https://proyecto-bog-backend.onrender.com/servidor/register"
