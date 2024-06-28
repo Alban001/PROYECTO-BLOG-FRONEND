@@ -5,7 +5,7 @@
 
 
 [[redirects]]
-  from = "/servidor/*"
+  from = "/api/*"
   to = "https://proyecto-bog-backend.onrender.com/:splat"
   status = 200
   force = true
@@ -25,13 +25,6 @@
  [[redirects]]
   from = "/auth/*"
   to = "https://proyecto-bog-backend.onrender.com/servidor/auth/logout"
-  status = 200
-  force = true
-
-  
-[[redirects]]
-  from = "/servidor/"
-  to = "/.netlify/functions/servidor/upload"
   status = 200
   force = true
 
