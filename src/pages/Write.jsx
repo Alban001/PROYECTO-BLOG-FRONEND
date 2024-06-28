@@ -4,7 +4,6 @@ import "react-quill/dist/quill.snow.css";
 import axios from "axios";
 import { useLocation, useNavigate } from "react-router-dom";
 import moment from "moment";
-import { toHaveValue } from "@testing-library/jest-dom/dist/matchers";
 
 const Write = () => {
 
@@ -23,7 +22,7 @@ const Write = () => {
     try {
       const formData = new FormData();
       formData.append("file", file);
-      const res = await axios.post("https://proyecto-bog-backend.onrender.com/upload", formData);
+      const res = await axios.post('https://proyecto-bog-backend.onrender.com/upload', formData);
       return res.data;
     } catch (err) {
       console.log(err);
