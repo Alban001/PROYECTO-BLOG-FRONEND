@@ -8,7 +8,6 @@ import moment from "moment";
 import 'moment/locale/es'
 import { useContext } from "react";
 import { AuthContext } from "../context/authContext";
-import DOMPurify from "dompurify";
 
 const Single = () => {
   const [post, setPost] = useState({});
@@ -49,7 +48,7 @@ const Single = () => {
   return (
     <div className="single">
       <div className="content">
-        <img src={`../upload/${post?.img}`} alt="" />
+        <img src={`/upload/${post?.img}`} alt="" />
        
         <div className="user">
           {post.userImg && <img
