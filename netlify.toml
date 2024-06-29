@@ -17,7 +17,7 @@
   force = true
 
   [[redirects]]
-  from = "/servidor/*"
+  from = "/auth/*"
   to = "https://proyecto-bog-backend.onrender.com/servidor/auth/login/:splat"
   status = 200
   force = true
