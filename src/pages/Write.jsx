@@ -22,7 +22,7 @@ const Write = () => {
     try {
       const formData = new FormData();
       formData.append("file", file);
-      const res = await axios.post('https://proyecto-bog-backend.onrender.com/upload', formData);
+      const res = await axios.post(`${API_URL}/servidor/upload`, formData);
       return res.data;
     } catch (err) {
       console.log(err);
