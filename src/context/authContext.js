@@ -9,12 +9,12 @@ export const AuthContexProvider = ({ children }) => {
   );
 
   const login = async (inputs) => {
-    const res = await axios.post("https://proyecto-bog-backend.onrender.com/auth/login", inputs);
+    const res = await axios.post("https://proyecto-bog-backend.onrender.com/servidor/auth/login", inputs);
     setCurrentUser(res.data);
   };
 
   const logout = async (inputs) => {
-    await axios.post("https://proyecto-bog-backend.onrender.com/auth/logout");
+    await axios.post("https://proyecto-bog-backend.onrender.com/servidor/auth/logout");
     setCurrentUser(null);
   };
 
