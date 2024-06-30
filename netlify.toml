@@ -5,18 +5,15 @@
 
 
 
-
-[[redirects]]
-  from = "/posts/*"
-  to = "https://proyecto-bog-backend.onrender.com/servidor/posts/:splat"
-  status = 200
-  force = true
-  
   [[redirects]]
   from = "/servidor/*"
   to = "https://proyecto-bog-backend.onrender.com/:splat"
   status = 200
   force = true
+
+
+
+
 
   [[redirects]]
   from = "/auth/*"
