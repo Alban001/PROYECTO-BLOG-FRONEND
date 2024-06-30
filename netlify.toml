@@ -25,12 +25,7 @@
   status = 200
   force = true
 
- [[redirects]]
-  from = "/auth/*"
-  to = "https://proyecto-bog-backend.onrender.com/servidor/auth/logout/:splat"
-  status = 200
-  force = true
-
+  
    [[redirects]]
   from = "/auth/*"
   to = "https://proyecto-bog-backend.onrender.com/servidor/register/:splat"
