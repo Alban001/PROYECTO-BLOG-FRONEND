@@ -14,7 +14,7 @@ export const AuthContexProvider = ({ children }) => {
   };
 
   const logout = async (inputs) => {
-    await axios.post("/auth/logout");
+    await axios.post("https://proyecto-bog-backend.onrender.com/servidor/auth/logout");
     setCurrentUser(null);
   };
 
